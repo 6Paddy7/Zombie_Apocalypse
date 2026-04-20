@@ -14,7 +14,7 @@ def get_jacobian_dfe(P, beta, alpha, delta, zeta):
     Disease-Free Equilibrium (S=P/delta, Z=0, R=0).
     """
     S_eq = P / delta
-    # The matrix we derived on paper
+    #The matrix we derived on paper
     J = np.array([
         [P - delta, -beta * S_eq, 0],
         [0, (beta - alpha) * S_eq, zeta],
